@@ -1,0 +1,16 @@
+plugins {
+    id 'org.springframework.boot' version '3.1.2'
+}
+
+dependencies {
+    implementation project(':domain:mybookgallery-domain-mybook')
+    implementation project(':domain:mybookgallery-domain-user')
+    implementation project(':adapter:mybookgallery-web-adapter')
+    implementation project(':adapter:mybookgallery-persistence-adapter')
+    implementation project(':application:mybookgallery-api-in')
+    implementation project(':application:mybookgallery-api-out')
+    implementation project(':application:mybookgallery-service-mybook')
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
+

@@ -1,0 +1,10 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+    implementation project(':domain:mybookgallery-domain-mybook')
+    implementation project(':domain:mybookgallery-domain-user')
+
+    implementation project(':application:mybookgallery-api-in')
+    implementation project(':application:mybookgallery-api-out')
+}

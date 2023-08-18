@@ -1,0 +1,15 @@
+rootProject.name = 'my-book-gallery'
+
+include 'configuration'
+// ⬇️
+include 'adapter:mybookgallery-web-adapter'
+include 'adapter:mybookgallery-persistence-adapter'
+// ⬇️
+include 'application:mybookgallery-api-in'
+include 'application:mybookgallery-api-out'
+// ⬆️
+include 'application:mybookgallery-service-mybook'
+// ⬇️
+include 'domain:mybookgallery-domain-mybook'
+include 'domain:mybookgallery-domain-user'
+

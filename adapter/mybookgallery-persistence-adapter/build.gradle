@@ -1,0 +1,11 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+    implementation project(':domain:mybookgallery-domain-mybook')
+    implementation project(':domain:mybookgallery-domain-user')
+    implementation project(':application:mybookgallery-api-out')
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2'
+}

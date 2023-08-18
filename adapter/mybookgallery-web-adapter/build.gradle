@@ -1,0 +1,12 @@
+bootJar.enabled=false
+jar.enabled=true
+
+dependencies {
+    implementation project(':domain:mybookgallery-domain-mybook')
+    implementation project(':domain:mybookgallery-domain-user')
+    implementation project(':application:mybookgallery-api-in')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+}
